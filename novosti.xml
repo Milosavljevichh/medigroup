@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Medigroup</title>
+        <link>https://milosavljevichh.github.io/medigroup/index.html</link>
+        <description>Budite u toku s našim novostima!</description>
+
+        <item>
+            <title>Usluge koje nudimo</title>
+            <link>https://milosavljevichh.github.io/medigroup/usluge.html</link>
+            <description>Šta je dodato našim uslugama?</description>
+        </item>
+    </channel>
+</rss>
