@@ -1,0 +1,813 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: main_font;
+    src: url(fonts/nunito/Nunito-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: content_font;
+    src: url(fonts/Kanit/Kanit-Regular.ttf);
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* HEADER I NJEGOVA DECA */
+
+nav a, .section-title, .kartica-usluga a,
+.usluge-kartica h1, #autor-right h2, h3{
+    font-family: main_font;
+    color: #ECF4D6;
+}
+
+#autor-right h2 {
+    font-size: 34px;
+}
+
+.section-title h1 {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.section-title h2 {
+    font-size: 22px;
+    font-weight: 300;
+}
+
+#header {
+    display: flex;
+    padding: 15px 75px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1f4563;
+}
+
+#logo {
+    width: 200px;
+    border: 3px solid #2D9596;
+    border-radius: 7px;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: 16px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ECF4D6;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+nav li, nav a {transition: all 0.6s;}
+
+nav li:hover {
+    transform: scale(1.05);
+}
+
+nav  a:hover {color: #b8b8b7;}
+
+/* MAIN SEKCIJA */
+
+#main {
+    background-image: url(imgs/pexels-pixabay-40568.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#hero {
+    
+    padding: 65px 45px;
+    display: flex;
+    height: 550px;
+    background-color: #265073ca;    
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+#levi, #naslov, #opis {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#naslov {
+    gap: 15px;
+}
+
+#levi {
+    width: 580px;
+    gap: 65px;   
+}
+
+
+#opis {
+    gap: 28px;
+}
+
+#levi h1, #levi h2, #levi p {
+    font-family: main_font;
+    color: #ECF4D6;
+    text-align: center;
+}
+
+p,  #contact-info a  {
+    font-family: content_font;
+    color: #ECF4D6;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+
+#contact-info a:hover {
+    color: #b8b8b7;
+}
+
+#levi h1 {
+    font-size: 54px;
+    font-weight: bold;
+}
+
+#levi h2{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#levi img {
+    width: 76px;
+}
+
+
+.CTA, .CTA-form, .CTA-usluge {
+    background-color: #2D9596;
+    border-radius:30px;
+    padding: 9px 26px;
+    border: #9AD0C2 3px solid;
+    font-family: content_font;
+    color: #ECF4D6;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.4s;
+}
+
+.CTA:hover, .CTA-usluge:hover {
+    background-color: #1d6d6e;
+    border: #79ac9f 2.7px solid;
+    transform: translateY(-3.5px);
+    cursor: pointer;
+}
+
+
+#desni img{
+    width: 650px;
+    border-radius: 15px 170px 15px 170px;
+    margin: 65px 0;
+    border: #2D9596 solid 4px;
+    background-size: contain;
+    margin: 25px 0;
+}
+
+/* USLUGE */
+
+#usluge {
+    height: 715px;
+    background-color: #2D9596;
+    color: #ECF4D6;
+}
+
+#usluge, #section-title, #kartice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#usluge {
+    padding: 30px 0;
+    gap: 25px;
+}
+
+#kartice {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0px 75px;
+    gap: 40px;
+    margin: 30px 0;
+}
+
+.kartica-usluga:hover {
+    transform: translateY(-7.5px);
+    box-shadow: #17344d -7px 7px 11px;
+    cursor: pointer;
+}
+
+#kartice img {
+    width: 84px;
+}
+
+.kartica-usluga h2 {
+    font-size: 34px;
+    font-weight:bolder;
+}
+
+.kartica-usluga {
+    background-color: #265073;
+    border: #9AD0C2 solid 3.5px;
+    width: 22%;
+    height: 350px;
+    padding: 35px 25px;
+    text-align: center;
+    border-radius: 40px;
+    transition: all 0.4s;
+}
+
+.kartica-usluga a {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* O nama */
+
+#about-shade {
+    height: 550px;
+    background-color: #265073ca;
+    padding: 95px 135px;
+    display: flex;
+    align-items: center;
+}
+
+#about-title {
+    width: 100%;
+    text-align: center;
+    border-bottom: 4px #fff solid;
+    border-radius: 7px;
+}
+
+#about-right .section-title {
+    width: 100%;
+}
+
+#about{
+    background-image: url(imgs/office.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#about-container {
+    background-color: #2d94969c;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 35px;
+    border: #9AD0C2 solid 3.5px;
+    padding: 20px 0;
+}
+
+#about-left img {
+    width: 80%;
+    border-radius: 65px 15px 65px 15px;
+    border: #9AD0C2 solid 3px;
+}
+
+#about-left {
+    padding-left: 45px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 45%;
+}
+
+#about-right {
+    padding-right: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 55%;
+    gap: 20px;
+}
+
+/* Ikonice */
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24,
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+
+.blueColor{
+    color: #265073;
+}
+
+.whiteColor {
+    color: #fff;
+}
+/* Kontakt */
+
+#kontakt-section {
+    background-color: #265073;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 75px;
+    height: 650px;
+    background-image: url(imgs/pills.png);
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-size: 50%;
+    background-blend-mode:multiply;
+}
+
+#kontakt-bg {
+    background-color: #9AD0C2;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 35px;
+    height: 80%;
+    border-radius: 30px;
+    border: #2D9596 solid 4px;
+}
+
+#left-kontakt {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    width: 35%;
+    height: 80%;
+}
+
+#left-kontakt p, #left-kontakt h1, #left-kontakt #contact-info a {
+    color: #265073;
+    font-weight: bolder;
+    transition: all 0.3s;
+}
+
+#left-kontakt #contact-info a:hover {
+    color: #163750;
+}
+
+#right-kontakt {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+    width: 55%;
+    height: 80%;
+}
+
+#kontakt-forma {
+    background-color: #2D9596;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 30px 20px;
+    width: 90%;
+    border-radius: 15px;
+}
+
+#kontakt-forma, #kontakt-forma input, #kontakt-forma textarea {
+    border: #17344d solid 3px;
+}
+
+#kontakt-bg, #kontakt-forma {
+    box-shadow: #17344d87 0px 6px 10px;
+}
+
+#ime-prezime, #e-mail, #telefon, #poruka {
+    background-color: #ECF4D6;
+    height: 50px;
+    width: 95%;
+    border-radius: 9px;
+    font-size: 16px;
+    text-indent: 25px;
+    font-family: content_font;
+}
+
+#ime-prezime::placeholder, #e-mail::placeholder, #telefon::placeholder, #poruka::placeholder {
+    color: #4f4f4f;
+    text-align: center;
+    font-weight: bold;
+    text-indent: 0px;
+
+}
+
+#form-section {
+    width: 95%;
+    display: flex;
+    gap: 12px;
+}
+
+#e-mail, #telefon {
+    width: 50%;
+    height: 50px;
+}
+
+#poruka {
+    height: 50%;
+    resize: none;
+}
+
+.CTA-form {
+    border: none;
+    background-color: #265073;
+    padding: 8px 20px;
+    width: 40%;
+}
+
+.CTA-form:hover {
+    background-color: #163750;
+    cursor: pointer;
+}
+
+#left-kontakt .section-title {
+    border-bottom: #265073 3.5px solid;
+    border-radius: 4px;
+}
+
+.section-title {
+    text-align: center;
+}
+
+/* FOOTER */
+
+#footer, #footer-top {
+    background-color: #1d6d6e;
+    padding: 30px 0 10px 0;
+}
+
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+}
+
+#footer-top, #footer-bottom{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#footer-left, #footer-right, #footer-mid{
+    width: 33%;
+}
+
+#socialExp {
+    border-radius: 200px;
+    width: 42px;
+    height: 42px;
+    background-color: #b8b8b7;
+}
+
+#social-icons {
+    display: flex;
+    gap: 6px;
+}
+
+#footer-left, #footer-right,#footer-mid {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items:center;
+    justify-content: center;
+}
+
+#footer-left {
+    gap: 8px;
+}
+
+#copyright {
+    font-weight:500;
+    font-size: 15px;
+}
+
+#ico {
+    height: 17px;
+    width: 17px;
+    border-radius: 300px;
+    background-color: gray;
+}
+
+#contact-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Usluge stranica */
+/* Main */
+
+#main-usluge {
+    background-color: #2D9596;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    height: 900px;
+    padding: 15px 75px;
+}
+
+.usluge-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.usluge-kartica a{
+    background-color: #265073;
+    padding: 15px 25px;
+    border-radius: 20px;
+    border: #9AD0C2 solid 3.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 390px;
+    height: fit-content;
+}
+
+.usluge-kartica p, .usluge-kartica a, .usluge-kartica h1,
+.kartica-usluga h2, .kartica-usluga p {
+    transition: all 0.5s;
+}
+
+.usluge-kartica a:hover, .kartica-usluga:hover {
+    background-color: #9AD0C2;
+    border: #265073 solid 3.5px;
+}
+
+.usluge-kartica a:hover {
+    transform: translateY(-8px);
+    box-shadow: #17344d 0px 10px 10px;
+}
+
+.kartica-usluga:hover {
+    border-color: #265073;
+}
+
+.kartica-usluga:hover a, .kartica-usluga:hover p {
+    color: #265073;
+}
+
+.usluge-kartica a:hover h1, .usluge-kartica a:hover p {
+    color: #265073;
+}
+
+.usluge-kartica a:hover .CTA {
+    border-color: #265073;
+    background-color: #265073;
+}
+
+.usluge-kartica img {
+    width: 84px;
+}
+
+.usluge-kartica h1 {
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.usluge-kartica p {
+    font-size: 16px;
+}
+
+.CTA-usluge {
+    background-color: #265073;
+    border-color: #265073;
+}
+
+.CTA-usluge:hover {
+    background-color: #9AD0C2;
+    border-color: #265073;
+    color: #265073;
+}
+
+/* GALERIJA */
+
+#galerija-main{
+    padding: 0px 75px 35px 75px;
+    background-color: #265073;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#galerija-main header {
+    padding: 35px 0px;
+}
+
+#galerija-main article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.prvi-red, #drugi-red {
+    display: flex;
+    gap: 25px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.prvi-red img,#drugi-red img {
+    border-radius: 20px;
+    border: #2D9596 3.5px solid;
+}
+
+.prvi-red img {
+    width: 250px;
+}
+
+#drugi-red img {
+    width: 525px;
+}
+
+#galerija-main article div img {
+    transition: all 0.4s;
+}
+#galerija-main article div img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* AUTOR */
+#autor-main {
+    background:linear-gradient( to top right, #10273a, #265073);
+    padding-bottom: 150px;
+}
+
+
+#autor-main header {
+    padding-top: 35px;
+    background-color: #2D9596;
+    border-bottom: #265073 4px dashed;
+    border-top: #265073 4px dashed;
+}
+
+#autor-main header h2 {
+    padding-bottom: 20px;
+}
+
+#autor-container{
+    padding: 0 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 135px;
+    margin-top: 75px;
+}
+
+#autor-right {
+    width: 50%;
+}
+
+#autor-right * {
+    margin: 15px 0;
+}
+
+#autor-right p a, #autor-right p a:visited {
+    color: #9AD0C2;
+}
+
+#autor-left img{
+    width: 300px;
+    height: 300px;
+    border-radius: 60%;
+    border: #9AD0C2 3px solid;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+}
+
+#autor-right div img {
+    width: 28px;
+}
+
+#circle {
+    width: 300px;
+    height: 300px;
+    background-color: #9AD0C2;
+    border-radius: 60%;
+    z-index: 0;
+    top: 0px;
+    position: relative;
+}
+
+/* hirurgija main */
+#hirurgija-main {
+    background-color: #2D9596;
+    padding: 30px 75px;
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    gap: 30px;
+}
+
+#hirurgija-main #container, #hirurgija-bottom {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+
+#hirurgija-bottom {
+    gap: 5px;
+    justify-content: space-between;
+}
+
+#hirurgija-top h3, #neurohirurgija-top h3, #stomatologija-top h3,
+#genetika-top h3, #decija-top h3, #urologija-top h3{
+    margin-top: 25px;
+    color: #9AD0C2;
+}
+
+#hirurgija-top, #neurohirurgija-top,
+#stomatologija-top, #genetika-top, #decija-top, #urologija-top {
+    background-image: url('imgs/woman-bg.png');
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-blend-mode:darken;
+    background-position: right bottom;
+    background-color: #26507384;
+    padding: 35px 425px 35px 35px;
+    border-radius: 30px;
+    border: 3.5px #265073 solid;
+}
+
+#neurohirurgija-top {
+    background-image: url('imgs/neurohirurgija-bg.png');
+    background-size: 37%;
+}
+
+#stomatologija-top {
+    background-image: url('imgs/zubar-bg.png');
+    background-size: 34%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#genetika-top {
+    background-image: url('imgs/dna-bg.png');
+    background-size: 34%;
+}
+
+#decija-top {
+    background-image: url('imgs/kids-bg.png');
+}
+
+#urologija-top {
+    background-image: url('imgs/kidney-bg.png');
+    background-size: 36%;
+}
+
+#container {
+    margin: 35px 0;
+}
+
+#hirurgija-main img {
+    width: 48%;
+    border-radius: 30px;
+    border: #265073 3.5px solid;
+}
+
+h3 {
+    border-bottom: dashed #ECF4D6 3px;
+    font-size: 29px;
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Medigroup</title>
+	<link rel="shortcut icon" href="imgs/ico.ico">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+		<header id="header">
+			<div><a href="index.html"><img src="imgs/logo.png" alt="logo" id="logo"></a></div>
+			<nav>
+				<ul>
+					<li><a href="index.html">Početna</a></li>
+					<li><a href="galerija.html">Galerija</a></li>
+					<li><a href="usluge.html">Usluge</a></li>
+					<li><a href="autor.html">o autoru</a></li>
+					<li><a href="#kontakt-section">kontakt</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<section id="main">
+				<article id="hero">
+
+					<div id="levi">
+						<header id="naslov">
+							<img src="imgs/healthy.png" alt="famiy">
+							<hgroup>
+								<h1>MEDIGROUP</h1>
+								<h2>ZDRAVSTVENI SISTEM ZA CELU PORODICU</h2>
+							</hgroup>
+						</header>
+						<footer id="opis">
+							<p>Na jednom mestu obezbeđena vam je najkvalitetnija medicinska pomoć od strane vodećih specijalista</p>
+							<a href="#kontakt-section"><button class="CTA">KONTAKT</button></a>
+						</footer>
+					</div>
+
+					<div id="desni">
+						<img src="imgs/worker2.jpg" alt="radnica">
+					</div>
+
+				</article>
+			</section>
+
+		<section id="usluge">
+			<header class="section-title">
+				<hgroup>
+					<h1>Usluge</h1>
+					<h2>Za sve vaše potrebe</h2>
+				</hgroup>
+			</header>
+
+			<div id="kartice">
+				<article class="kartica-usluga" >
+					<a href="usluge.html#decijaMed">
+						<img src="imgs/baby.png" alt="dete">
+						<h2>Dečija medicina</h2>
+						<p>Odeljenje dečje hirurgije Medigroup zdravstvenog sistema pruža usluge dijagnostike i lečenja hirurških bolesti dece od 0 do 18 godina.</p>
+					</a>
+				</article>
+
+				<article class="kartica-usluga" >
+					<a href="usluge.html#hirurgija">
+						<img src="imgs/surgery.png" alt="hirurg">
+						<h2>Hirurgija</h2>
+						<p> Uz hiruško odeljenje pacijentima na raspolaganju su i usluge poluintenzivne i intenzivne nege, kao i dva jednokrevetna i četiri dvokrevetna apartmana.</p>
+					</a>
+				</article>
+
+				<article class="kartica-usluga" >
+					<a href="usluge.html#urologija">
+						<img src="imgs/kidneys.png" alt="bubreg">
+						<h2>Urologija</h2>
+						<p>Služba Urologije Medigroup bavi se savremenom dijagnostikom i lečenjem oboljenja organa urinarnog trakta kod muškaraca i žena.</p>
+					</a>
+				</article>
+
+			</div>
+			<footer>
+				<a href="usluge.html">
+				<button class="CTA-usluge" >Pronađi uslugu</button>
+			</a>
+			</footer>
+		</section>
+
+		<section id="about">
+			<div id="about-shade">
+				<article id="about-container">
+			
+					<div id="about-left">
+						<img src="imgs/discussion.jpg" alt="doctors discussing">
+					</div>
+					<div id="about-right">
+						<header class="section-title">
+							<h1 id="about-title">O nama</h1>
+						</header>
+						<p>MediGroup je jedini privatni medicinski sistem koji funkcioniše kao korporacija, sa profesionalnim menadžmentom, uspostavljenom korporativnom kulturom i uz principe i kriterijume poslovanja koji su doneti iz najboljih inostranih praksi.</p>
+						
+						<p>Od svog nastanka MediGroup teži da, uz najrespektabilnije stručnjake i najsavremeniju opremu, svojim pacijentima pruži najviši nivo zdravstvene usluge.</p>
+						<a href="galerija.html"><button class="CTA">naš objekat</button></a>
+					</div>
+
+				</article>
+			</div>
+		</section>
+
+		<section id="kontakt-section">
+			<article id="kontakt-bg">
+				<div id="left-kontakt">
+					<div class="section-title">
+						<h1>Zakažite termin</h1>
+					</div>
+					<p>MediGroup je najveći i jedini sveobuhvatni privatni zdravstveni sistem u Srbiji i regionu. Stojimo Vam na raspolaganju za sva pitanja, predloge i komentare.</p>
+
+					<div id="contact-info">
+						<span class="material-symbols-outlined blueColor"> phone_in_talk </span> 
+						<p>011 40 40 100</p>
+					</div>
+
+					<div id="contact-info">
+						<span class="material-symbols-outlined blueColor">mail</span>
+						<a href="mailto:zakazivanje@medigroup.rs">zakazivanje@medigroup.rs</a>
+					</div>
+					
+				</div>
+				<div id="right-kontakt">
+				
+					<form method="POST" action="obrada.php" id="kontakt-forma">
+						<input type="text" name="ime-prezime" id="ime-prezime" placeholder="IME I PREZIME">
+						<div id="form-section">
+							<input type="email" name="e-mail" id="e-mail" placeholder="E-MAIL">
+							<input type="number" name="telefon" id="telefon" placeholder="TELEFON">
+						</div>
+						<textarea name="poruka" id="poruka" cols="30" rows="10" placeholder="PORUKA"></textarea>
+						<button type="submit" class="CTA-form">POŠALJI</button>
+					</form>
+					
+				</div>
+			</article>
+		</section>
+		</main>
+		
+		<footer id="footer">
+			<div id="footer-top">
+				<div id="footer-right">
+					<a href="index.html"><img src="imgs/logo.png" alt="logo" id="logo"></a>
+				</div>
+				<div id="footer-mid">
+					<div id="social-icons">
+						<div id="socialExp"></div>
+						<div id="socialExp"></div>
+						<div id="socialExp"></div>
+					</div>
+					
+				</div>
+				<div id="footer-left">
+					<div id="contact-info">
+						<span class="material-symbols-outlined whiteColor"> phone_in_talk </span>
+						<p>011 40 40 100</p>
+					</div>
+					<div id="contact-info">
+						<span class="material-symbols-outlined whiteColor">mail</span>
+						<a href="mailto:zakazivanje@medigroup.rs">zakazivanje@medigroup.rs</a>
+					</div>
+				</div>
+			</div>
+			<div id="footer-bottom">
+				<p id="copyright">&copy; 2023 Miloš Milosavljević 9/23 All rights reserved.</p>
+			</div>
+		</footer>
+</body>
+</html>
