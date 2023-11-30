@@ -176,6 +176,48 @@ p,  #contact-info a  {
     border: #2D9596 solid 4px;
     background-size: contain;
     margin: 25px 0;
+    animation: grow 2.5s;
+}
+
+#naslov hgroup, #opis p {
+    animation: slide 1.5s;
+}
+
+#naslov img, #opis a {
+    animation: fade-in 2.5s;
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(0);
+        opacity: 0;;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 100;
+    }
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-200%);
+    }
+
+    100% {
+        transform: translateX(0);
+
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
+    }
 }
 
 /* USLUGE */
@@ -484,11 +526,18 @@ p,  #contact-info a  {
     width: 33%;
 }
 
+
 #socialExp {
-    border-radius: 200px;
-    width: 42px;
-    height: 42px;
-    background-color: #b8b8b7;
+    border-radius: 50px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#socialExp img {
+    width: 32px;
 }
 
 #social-icons {
@@ -502,6 +551,14 @@ p,  #contact-info a  {
     gap: 32px;
     align-items:center;
     justify-content: center;
+}
+
+#footer-mid {
+    gap: 10px;
+}
+
+.footer-nav{
+    font-size: 14px;
 }
 
 #footer-left {
