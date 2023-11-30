@@ -176,7 +176,6 @@ p,  #contact-info a  {
     border: #2D9596 solid 4px;
     background-size: contain;
     margin: 25px 0;
-    animation: grow 2.5s;
 }
 
 #naslov hgroup, #opis p {
@@ -185,18 +184,6 @@ p,  #contact-info a  {
 
 #naslov img, #opis a {
     animation: fade-in 2.5s;
-}
-
-@keyframes grow {
-    0% {
-        transform: scale(0);
-        opacity: 0;;
-    }
-
-    100% {
-        transform: scale(1);
-        opacity: 100;
-    }
 }
 
 @keyframes slide {
